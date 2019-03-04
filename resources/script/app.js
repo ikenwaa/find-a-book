@@ -57,10 +57,9 @@ function isEnter(e){
     if(e.keyCode == 13){
         display();
     }
-    e.preventDefault();
 }
 
-searchButton.addEventListener('click', display);
+searchButton.addEventListener('onSubmit', display);
 searchInput.addEventListener('keydown', (e) => isEnter(e));
 
 // Disclaimer!!!
