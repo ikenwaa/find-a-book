@@ -59,7 +59,7 @@ function isEnter(e){
     }
 }
 
-searchButton.addEventListener('onSubmit', display);
+searchButton.addEventListener('click', display);
 searchInput.addEventListener('keydown', (e) => isEnter(e));
 
 // Disclaimer!!!
