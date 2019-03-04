@@ -43,7 +43,7 @@ function logBooks(arr){
                         <p>${publisher}</p>
                     </div>
                 </div>
-                <div class="book__button"><a href="${infoLink}" target="__blank" class="book__link">More Information</a></div>
+                <div class="book__button"><a href="${infoLink}" target="__blank" class="book__link">Learn more</a></div>
                 
             </div>
             `
