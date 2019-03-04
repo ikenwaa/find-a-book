@@ -1,0 +1,285 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100% ;
+}
+
+body{
+  font-family: 'Varela Round', sans-serif;
+  /* background: -webkit-linear-gradient(to bottom, #06beb6, #48b1bf); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to bottom, #06beb6, #48b1bf); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #EFF1C5;
+}
+
+main {
+  margin: 0 auto;
+  width: 85%;
+  height: auto;
+}
+
+main .app-title{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #035E7B;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 767px){
+  main {
+    width: 100%;
+  }
+  main .app-title{
+    font-size: 30px;
+    line-height: 1;
+    border-radius: 0%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.text{
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+}
+
+.container .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.search-box{
+  box-shadow: 5px 5px 10px 5px rgba(17, 11, 17, 0.15);
+}
+
+.container .search-box .search-input {
+  
+  background: #F5F5F5;
+  width: 85%;
+  margin: .5rem .75rem;
+  padding: 1.3rem;
+  font-size: 1.25rem;
+  border: none;
+}
+
+.container .search-box .search-btn {
+  cursor: pointer;
+  background: #F5F5F5;
+  border: none;
+  padding: 1rem 0.5rem;
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+.search-wrapper .search-form .search-btn i {
+  min-width: 16px;
+  max-width: 32px;
+}
+
+/* Search Results */
+.search-results{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+@media only screen and (max-width: 767px){
+  .search-results{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+.search-results .placement-text {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  text-shadow: 2px 2px 4px #F5F5F5;
+}
+
+@media only screen and (max-width: 767px){
+  .search-results .placement-text {
+    font-size: 23px;
+  }
+}
+
+.search-results .results {
+  position: relative;
+  width: 35%;
+  background: #F5F5F5;
+  padding: 0 1.25rem;
+  margin: 2% 1% 2% 8%;
+  border-radius: 13px 5px;
+  -webkit-box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
+          box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px){
+  .search-results .results {
+    width: 80%;
+    margin: 5% 10%;
+  }
+}
+
+.search-results .results h1 {
+  font-size: 25px;
+  padding: 8px;
+  margin: 16px 0;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #110B11;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid #5858587a;
+}
+
+@media only screen and (max-width: 767px){
+
+  .search-results .results h1{
+    font-size: 20px;
+  }
+}
+
+.search-results .results .book__info {
+  margin-bottom: 2px;
+}
+
+.search-results .results .book__info .book__image {
+  width: 40%;
+  float: left;
+  border: 1px solid rgba(17, 11, 17, 0.3);
+  margin-bottom: 8px;
+  -webkit-box-shadow: 7px 7px 14px 0px rgba(17, 11, 17, 0.2);
+          box-shadow: 7px 7px 14px 0px rgba(17, 11, 17, 0.2);
+}
+
+.search-results .results .book__info .book__details {
+  width: 54%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-results .results .book__info .book__details p {
+  color: #3f293f;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 3px 0;
+  padding-left: 2px;
+  line-height: 1.2;
+}
+
+.search-results .results .book__info .book__details p.detail {
+  padding-left: 0;
+  font-weight: 700;
+  color: #110B11;
+}
+
+.search-results .results .book__button {
+  width: 70%;
+  text-align: center;
+  margin: 18px auto;
+}
+
+@media only screen and (max-width: 767px){
+  .search-results .results .book__button {
+    width: 65%;
+  }
+}
+
+.search-results .results .book__button .book__link {
+  display: block;
+  letter-spacing: 1px;
+  padding: 16px 0;
+  text-decoration: none;
+  color: #000;
+  background: #307B93;
+  border-radius: 5px 13px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.search-results .results .book__button .book__link:hover {
+  background: #035E7B;
+  color: #F5F5F5;
+  border-radius: 13px 5px;
+}
+
+/* Disclaimer!!!
+
+I got the concepts and ideas of this app from someone who created a similar app in Chingu voyage Slack room.
+I can't remember the person's name right now. But I recrerated it. */
+
+
+
+/* FOOTER
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* background: #035E7B; */
+  /* color: white;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+} */ 
