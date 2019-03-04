@@ -57,6 +57,7 @@ function isEnter(e){
     if(e.keyCode == 13){
         display();
     }
+    e.preventDefault();
 }
 
 searchButton.addEventListener('click', display);
